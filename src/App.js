@@ -21,9 +21,11 @@ const App = () => {
         <h1>Hello from AWS Amplify</h1>
       </div>
       <div className="counter">
-        <p>Counter: {count}</p>
-        <button onClick={() => decreaseCount()}>-</button>
-        <button onClick={() => increaseCount()}>+</button>
+        <p className='counter-text'>Counter: {count}</p>
+        <div className='counter-button-container'>
+          <button className='counter-button' onClick={() => decreaseCount()}>-</button>
+          <button className='counter-button' onClick={() => increaseCount()}>+</button>
+        </div>
       </div>
     </div>
   );
